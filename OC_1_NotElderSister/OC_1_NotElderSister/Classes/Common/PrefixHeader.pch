@@ -1,0 +1,118 @@
+//
+//  PrefixHeader.pch
+//  OC_1_NotElderSister
+//
+//  Created by 一泓明峰 on 16/2/29.
+//  Copyright © 2016年 RJ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 基本库
+#ifdef __OBJC__
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+//#import <AVFoundation/AVFoundation.h>
+
+//SDK
+
+// 第三方
+//#import <Fabric/Fabric.h>
+//#import <Crashlytics/Crashlytics.h>
+//#import <DigitsKit/DigitsKit.h>
+//
+//#import <POP.h>
+//#import <Masonry.h>
+//#import <FMDatabase.h>
+//#import "AFNetworking.h"
+//#import <Availability.h>
+//#import <SSKeychain.h>
+//#import <MJRefresh.h>
+//#import <MJExtension.h>
+//#import <SVProgressHUD.h>
+//#import <SDWebImageManager.h>
+//#import <MBProgressHUD.h>
+//#import <DACircularProgressView.h>
+//#import <DALabeledCircularProgressView.h>
+//#import <TOWebViewController.h>
+//#import <ELCImagePickerController.h>
+//#import <IQKeyboardManager.h>
+//#import <IQKeyboardReturnKeyHandler.h>
+//#import <IQUIView+IQKeyboardToolbar.h>
+
+//分类扩展
+#import "UIView+Rect.h"
+
+//自定义Model
+//自定义controller
+#import "BaseViewController.h"
+#import "BaseNavigationController.h"
+#import "BaseTabBarController.h"
+
+#import "EssenceViewController.h"
+#import "NewViewController.h"
+#import "PublishViewController.h"
+#import "FriendTrendsViewController.h"
+#import "MeViewController.h"
+
+#import "GuidePageViewController.h"
+#import "StartPageViewController.h"
+#import "TipsPageViewController.h"
+#import "PushViewController.h"
+#import "LoginViewController.h"
+#import "RegisterViewController.h"
+
+#import "ThirdPartyLoginViewController.h"
+
+
+//自定义display === view
+//自定义Header
+#import "NetInterfaces.h"
+#import "Constant.h"
+
+//颜色
+#define ARGBColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0  blue:(b)/255.0  alpha:(a)] //argb
+#define RGBColor(r,g,b) ARGBColor((r),(g),(b),1.0) //rgb
+#define GrayColor(v) RGBColor((v),(v),(v)) //灰色
+#define MaskColor(v) ARGBColor(0,0,0,(v)) //蒙版色 v: alpha
+
+
+//Device
+//#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
+//// 屏幕尺寸
+//#define isIPhone6plus (PCScreenSizePhone6plus == [Screen screenSize]) //判断设备
+//#define isIPhone6 (PCScreenSizePhone6 == [Screen screenSize])
+//#define isIPhone5 (PCScreenSizePhone5 == [Screen screenSize])
+//#define isIPhone4 (PCScreenSizePhone4 == [Screen screenSize])
+
+#define screenH  [UIScreen mainScreen].bounds.size.height
+#define screenW  [UIScreen mainScreen].bounds.size.width
+#define screenBounds [UIScreen mainScreen].bounds
+
+// 自定义font
+#define Font(size) [UIFont systemFontOfSize:(size)]
+
+//网络
+//用户信息
+//本地
+//API
+
+//弱引用
+#define WeakSelf __weak typeof(self) weakSelf = self
+
+#pragma -- 把数据写到本地进行调试 无效了
+#define WriteToPlist(data, filename) [data writeToFile:[NSString stringWithFormat:@"/Users/secken-youfeng/Desktop/%@.plist", filename] atomically:YES]
+#endif
+
+#define NoteCenter [NSNotificationCenter defaultCenter]
+#ifdef DEBUG //打印 方法 行数 对应输出
+#define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define LogFunc NSLog(@"%s", __func__); //打印方法名
+#else
+#define DLog(...)
+#endif
+
+
+
+#endif /* PrefixHeader_pch */
