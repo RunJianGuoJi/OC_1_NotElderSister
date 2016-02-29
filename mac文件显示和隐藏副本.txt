@@ -1,0 +1,35 @@
+
+
+defaults write com.apple.finder AppleShowAllFiles -bool true 
+defaults write com.apple.finder AppleShowAllFiles -bool false
+
+block  Xcode里快捷键inline
+
+
+显示uuid
+defaults read /Applications/Xcode.app/Contents/Info DVTPlugInCompatibilityUUID
+
+大神班视频解码器
+fd0e3c34c883881800a511e5c74f00f225eee3948cf3dd60b6198b8b1a7fa25944c10bf2ece691757ae1ac9c397533cf307b08a5c265d37ad375127626c3b2c0e84abb9b57e7ac7538afd8048d8402e5
+
+欧陆词典
+0EKF8-EKWPU-LIACM-875YA
+
+大神班一期视频解码器
+
+
+
+公司岚桥国际大厦7楼 住云山路,上班6号线世纪大道下车5站
+我们是这个公司外派到华宝证券的
+我们是华宝证券的电商部
+电商部 里 有 运营。。前后端。。测试。。。产品。。。
+平台。。
+公司对外的品牌是 投客 目前公司的的项目有 投客网网站。。投客网APP。。。钱钱炒股APP。。
+
+http://zentao.touker.com/index.php?m=my&f=bug
+账号:chenxiaowei
+密码:123456
+
+钱钱
+账号:13167463808
+密码:222222
